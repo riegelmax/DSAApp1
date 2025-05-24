@@ -4,7 +4,6 @@ WORKDIR /app
 
 COPY pocketbase .
 
-
-EXPOSE 8090
+RUN chmod +x pocketbase
 
 CMD ["sh", "-c", "./pocketbase serve --http=0.0.0.0:${PORT}"]
