@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 WORKDIR /app
-
+COPY pb_data ./pb_data
 COPY pocketbase .
 
 RUN chmod +x pocketbase
