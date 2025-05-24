@@ -3,7 +3,7 @@ FROM alpine:latest
 WORKDIR /app
 
 COPY pocketbase .
-COPY pb_data ./pb_data
+
 
 EXPOSE 8090
 
